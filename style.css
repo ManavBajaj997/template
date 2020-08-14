@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 html {
   box-sizing: border-box;
 }
@@ -5,4 +7,91 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
+  background-color: #dfdbe5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='Artboard-5' fill='%23271f34' fill-opacity='0.14' fill-rule='nonzero'%3E%3Cpath d='M6 18h12V6H6v12zM4 4h16v16H4V4z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  font-family: 'Lobster', cursive;
+  font-weight: 600;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  position: relative;
+  bottom: 9rem;
+}
+.quote-container {
+  width: auto;
+  max-width: 900px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.quote-text {
+  font-size: 2.5rem;
+}
+.long-quote {
+  font-size: 2rem;
+}
+.fa-quote-left {
+  font-size: 4rem;
+}
+.quote-author {
+  margin-top: 15px;
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1.2rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  background: #333;
+  outline: none;
+  padding: 0.5rem 1.8rem;
+  box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+  color: lightblue;
+}
+button:hover {
+  filter: brightness(110%);
+}
+button:active {
+  transform: translate(0, 0.3rem);
+  box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+.twitter-button:hover {
+  color: #38a1f3;
+}
+.fa-twitter {
+  font-size: 1.5rem;
+}
+
+/* @keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+
+@media screen and (max-width: 1000px) {
+  .quote-container {
+    margin: auto 10px;
+  }
+  .quote-text {
+    font-size: 2.5rem;
+  }
 }
